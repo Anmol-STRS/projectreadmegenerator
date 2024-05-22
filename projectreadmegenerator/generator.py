@@ -13,18 +13,15 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 MODEL_USING = os.getenv("MODEL")
 
-if not API_KEY:
-    API_KEY = CUSTOMER_INPUT.askfortheapikey()
-
-if not MODEL_USING:
-    MODEL_USING = CUSTOMER_INPUT.askforthemodel()
-
-PROJECT_LINK = CUSTOMER_INPUT.askforprojectlinkinput()
-
 if not API_KEY or not MODEL_USING:
-    STORAGE.storetheapikey(API_KEY, MODEL_USING)
-    raise ValueError("API key and model must be provided.")
-
+    print('Value not provided')
+    API_KEY = API_KEY or CUSTOMER_INPUT.askfortheapikey().strip().replace(' ', '')
+    MODEL_USING = MODEL_USING or CUSTOMER_INPUT.askforthemodel().strip().replace(' ', '')
+    if(STORAGE.storetheapikey(API_KEY, MODEL_USING)): 
+        print('ENV file is added')
+    
+    
+PROJECT_LINK = CUSTOMER_INPUT.askforprojectlinkinput()
 
 genai.configure(api_key=API_KEY)
 
@@ -38,7 +35,6 @@ response = model.generate_content(f"Please generate a beautiful and step by step
 def generateReadmefile():
     while True:
         try:
-            print(response.text)
             with open('README.md', 'w', encoding='utf-8') as readme_file:
                 readme_file.write(response.text)
 
@@ -46,6 +42,7 @@ def generateReadmefile():
                 content_written = readme_file.read()
                 
             if content_written == response.text:
+                print('Readme file is generated')
                 break
             
         except Exception as e:
