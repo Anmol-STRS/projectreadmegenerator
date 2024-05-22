@@ -7,7 +7,7 @@ class customuserinput:
     """
     @staticmethod
     def askforprojectlinkinput() -> str:
-        link = input("Enter the link of the project")
+        link = input("Enter the link of the project: ")
         if not link:
             raise KeyError("no valid link")
         return link
