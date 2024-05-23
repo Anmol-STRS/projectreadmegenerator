@@ -10,8 +10,8 @@ class generate:
         STORAGE = Storage
         CUSTOMER_INPUT = custominput
 
-        load_dotenv()
-
+        load_dotenv(dotenv_path=STORAGE.env_module_loader())
+        
         API_KEY = os.getenv("API_KEY")
         MODEL_USING = os.getenv("MODEL")
 
