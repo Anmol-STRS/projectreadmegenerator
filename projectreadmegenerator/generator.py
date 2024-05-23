@@ -1,14 +1,14 @@
-import customuserinput
+from .customuserinput import custominput
 import google.generativeai as genai
 import time
-import storage
+from .storage import Storage
 import os
 from dotenv import load_dotenv
 
 class generate:
     def generatereadmefile():
-        STORAGE = storage.Storage
-        CUSTOMER_INPUT = customuserinput.custominput
+        STORAGE = Storage
+        CUSTOMER_INPUT = custominput
 
         load_dotenv()
 
