@@ -11,4 +11,17 @@ class Storage:
         env_file_path = os.path.join(os.getcwd(), '.env')   
         with open(env_file_path, 'w') as envfile:
             envfile.write(content)
-            
+    
+        """
+        If the environment file is stored (.env), the function loads that env file corresponding 
+        to the working directory 
+
+        Returns:
+            DOTENV_PATH: Returns the path for environment file under the working directory 
+        """
+    
+    @staticmethod
+    def env_module_loader() -> str:
+        working_path = os.getcwd()
+        dotenv_path = f'{working_path}\\.env'
+        return dotenv_path
