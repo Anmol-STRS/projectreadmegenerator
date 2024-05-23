@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='projectreadme',
-    version='0.1',
+    version='0.2',
     packages= find_packages(),
     install_requires=[
         'google-generativeai',
@@ -17,7 +17,7 @@ setup(
     author='Anmol Dhiman',
     author_email='anmoldhimand666@gmail.com',
     description='A package for generating Project README files for a github project',
-    long_description= open('README.md').read(),
+    long_description= open('README.md', encoding= "utf-8").read(),
     long_description_content_type='text/markdown',
     url='https://github.com/Anmol-STRS/projectreadmegenerator',
     license='MIT',
