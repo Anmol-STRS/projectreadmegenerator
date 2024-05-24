@@ -14,7 +14,7 @@ class TestGenerateReadme(unittest.TestCase):
     @patch('google.generativeai.GenerativeModel')
     def test_generatereadmefile_env_vars_loaded(self, mock_model, mock_getenv, mock_load_dotenv, mock_custominput, mock_storage):
         # Mock environment variables
-        mock_getenv.side_effect = lambda key: 'fake_api_key' if key == 'API_KEY' else 'fake_model_name'
+        mock_getenv.side_effect = lambda key: 'A13413413jajdasdasd' if key == 'API_KEY' else 'gemini-1.5'
         
         # Mock storage and custom input methods
         mock_storage_instance = MagicMock()
