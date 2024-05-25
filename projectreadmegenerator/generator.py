@@ -87,7 +87,7 @@ class generate:
                 except Exception as e:
                     print("Error occurred while reading/writing the README file:", e)
                 
-                time.sleep(1)
+                time.sleep(2)
         writereadme()
         
     generatereadmefile()

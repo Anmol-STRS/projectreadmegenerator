@@ -25,3 +25,8 @@ class Storage:
         working_path = os.getcwd()
         dotenv_path = f'{working_path}\\.env'
         return dotenv_path
+    
+    @staticmethod
+    def display_modules() -> list:
+        modules = ['gemini', 'gemini2', 'gemini3']
+        return modules
