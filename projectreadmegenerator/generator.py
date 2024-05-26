@@ -5,6 +5,9 @@ from .storage import Storage
 import os
 from dotenv import load_dotenv
 
+"""
+Generate class has necessary functions to produce readme file
+"""
 class generate:
     
     def generatereadmefile():
