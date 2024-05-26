@@ -20,11 +20,11 @@ class Storage:
             DOTENV_PATH: Returns the path for environment file under the working directory 
         """
     
-    @staticmethod
-    def env_module_loader() -> str:
-        working_path = os.getcwd()
-        dotenv_path = f'{working_path}\\.env'
-        return dotenv_path
+    #@staticmethod
+    #def env_module_loader() -> str:
+       # working_path = os.getcwd()
+       # dotenv_path = f'{working_path}\\.env'
+       # return dotenv_path
     
     @staticmethod
     def display_modules() -> list:
