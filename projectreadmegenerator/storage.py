@@ -1,4 +1,5 @@
-import os 
+import os
+import google.generativeai as genai
 class Storage:
     """
     The function ask for the API key for the Gemini and the model for the Gemini,
@@ -27,6 +28,11 @@ class Storage:
         return dotenv_path
     
     @staticmethod
-    def display_modules() -> list:
-        modules = ['gemini', 'gemini2', 'gemini3']
-        return modules
+    def display_models() -> any:
+        models_list = []
+        with open ('projectreadmegenerator\\models.txt', 'r', encoding='utf-8') as models:
+            models_list = models.read().splitlines()
+            return models_list
+            
+    
+        

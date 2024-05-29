@@ -1,0 +1,36 @@
+PaLM 2 Chat (Legacy)
+Version number: 001
+PaLM 2 (Legacy)
+Version number: 001
+Embedding Gecko
+Version number: 001
+Gemini 1.0 Pro
+Version number: 001
+Gemini 1.0 Pro 001 (Tuning)
+Version number: 001
+Gemini 1.0 Pro Latest
+Version number: 001
+Gemini 1.0 Pro Vision
+Version number: 001
+Gemini 1.5 Flash
+Version number: 001
+Gemini 1.5 Flash 001
+Version number: 001
+Gemini 1.5 Flash Latest
+Version number: 001
+Gemini 1.5 Pro
+Version number: 001
+Gemini 1.5 Pro 001
+Version number: 001
+Gemini 1.5 Pro Latest
+Version number: 001
+Gemini 1.0 Pro
+Version number: 001
+Gemini 1.0 Pro Vision
+Version number: 001
+Embedding 001
+Version number: 001
+Text Embedding 004
+Version number: 004
+Model that performs Attributed Question Answering.
+Version number: 001
