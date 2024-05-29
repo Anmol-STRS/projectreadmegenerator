@@ -23,9 +23,9 @@ class Storage:
     
     @staticmethod
     def env_module_loader() -> str:
-        working_path = os.getcwd()
-        dotenv_path = f'{working_path}\\.env'
-        return dotenv_path
+       working_path = os.getcwd()
+       dotenv_path = f'{working_path}\\.env'
+       return dotenv_path
     
     @staticmethod
     def display_models() -> any:

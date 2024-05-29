@@ -38,7 +38,7 @@ This Python script automatically generates beautiful and informative README file
 
 ### 🧰 Customization
 
-You can easily tailor the generated README file by modifying the `readme_template.txt` file. This template uses placeholders that are replaced with your answers during the generation process.
+You can easily tailor the generated README file by modifying the `Readme.md` file. This template uses placeholders that are replaced with your answers during the generation process.
 
 ### 🤝 Contributing
 
